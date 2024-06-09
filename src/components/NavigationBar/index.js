@@ -10,7 +10,7 @@ const NavigationBar = () => {
 
       <div className='navbar'>
         <SideBar />
-        <div className='wrapper'>
+        {/* <div className='wrapper'>
           <motion.span 
           initial={{ opacity:0, scale:0.5 }}
           animate={{ opacity:1, scale:1 }}
@@ -21,38 +21,14 @@ const NavigationBar = () => {
           <div className='social'>
             <a href="#">
               <img src="/facebook.png" alt="" />
-              {/* <Image 
-              width={20}
-              height={20}
-                src="/facebook.png"
-              /> */}
             </a>
             <a href="#">
              <img src="/instagram.png" alt="" />
-              {/* <Image 
-              width={20}
-              height={20}
-                src="/instagram.png"
-              /> */}
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
-    //    <div>
-    //     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-    //   <Col className="gutter-row" span={6}>
-    //     <div 
-    //     >Projects</div>
-    //   </Col>
-    //   <Col className="gutter-row" span={6}>
-    //     <div>Skills</div>
-    //   </Col>
-    //   <Col className="gutter-row" span={6}>
-    //     <div>About</div>
-    //   </Col>
-    // </Row>
-    //    </div>
     );
 }
 export default NavigationBar;

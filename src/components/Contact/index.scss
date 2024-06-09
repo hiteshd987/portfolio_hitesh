@@ -1,0 +1,49 @@
+.contact-title {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 4rem;
+}
+
+.contact-row {
+    margin: 6rem 4rem;
+
+    .contact-card {
+        width: 50vh;
+        height: auto;
+
+        img {
+            height: 30rem;
+        }
+
+    }
+
+    .social {
+        width: 4vh;
+        height: 4vh;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 16px;
+
+        a {
+            width: inherit;
+            height: inherit;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+}
+
+.form-col {
+    margin: 1rem;
+}

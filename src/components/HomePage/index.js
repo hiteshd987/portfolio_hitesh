@@ -6,8 +6,9 @@ import styles from '../comp.module.css'
 import Description from "../Description";
 import Projects from "../Projects";
 import Skills from "../Skills";
-import About from "../About";
+import Timeline from "../Timeline";
 import Parallax from "../Parallax";
+import Contact from "../Contact";
 
 
 const HomePageComp = () => {
@@ -19,62 +20,36 @@ const HomePageComp = () => {
             </section>
             <section id="Projects"><Parallax type="projects" /></section>
             <Projects />
-            {/* <section id="Skills"><Parallax type="skills" /></section>
-            <Skills /> */}
-            <section id="About"><About /></section>
-            {/* <section className={styles.section}><NavigationBar /> </section>
-            <section className={styles.section}><Description /></section>
+            {/* <section id="Skills"><Parallax type="skills" /></section> */}
+            <section id="Skills"><Skills /></section>
+            <section id="Timeline"><Timeline /></section>
+            <section id="Contact"><Contact /></section>
+            {/* <section className={styles.section}><Description /></section>
             <section className={styles.section}><Projects /></section>
             <section className={styles.section}><Skills /></section> */}
         </div>
-
-    //     <>
-    //         <div>
-    //             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-    //              <Col className="gutter-row" span={10}>
-    //                 <div><NavigationBar /></div>
-    //             </Col>
-    //             <Col className="gutter-row" span={6}>
-    //                 <div>Social Media</div>
-    //             </Col>
-    //             </Row>
-    //         </div>
-
-    //         <div>
-    //             <Row>
-    //                 <Col span={24}>
-    //                     <div className={styles.content}>
-    //                     <Description />
-    //                     </div>
-    //                 </Col>
-    //             </Row>
-    //             <Row>
-    //             <h1 className={styles.heading}>Projects</h1>
-    //                 <Col span={24}>
-    //                     <div className={styles.content}>
-    //                     <Projects />
-    //                     </div>
-    //                 </Col>
-    //             </Row>
-    //                 <Row>
-    //                 <h1 className={styles.heading}>Skills</h1>
-    //                 <Col span={24}>
-    //                     <div className={styles.content}>
-    //                     <Skills />
-    //                     </div>
-    //                 </Col>
-    //                 </Row>
-    //                 <Row>
-    //                 <h1 className={styles.heading}>Educational Details </h1>
-    //                 <Col span={6}>
-    //                     <div className={styles.content}>
-    //                         Carousel
-    //                     </div>
-    //                 </Col>
-    //             </Row>
-    //         </div>
-    // </>
     )
 }
+
+
+// const HomePageComp = () => {
+//     return (
+//         <div>
+//             <section id="HomePage">
+//                 <NavigationBar />
+//                 <Description /> 
+//             </section>
+//             <section id="Projects"><Parallax type="projects" /></section>
+//             <Projects />
+//             <section id="Skills"><Parallax type="skills" /></section>
+//             <Skills />
+//             <section id="Timeline"><Timeline /></section>
+//             <section id="Contact"><Contact /></section>
+//             {/* <section className={styles.section}><Description /></section>
+//             <section className={styles.section}><Projects /></section>
+//             <section className={styles.section}><Skills /></section> */}
+//         </div>
+//     )
+// }
 
 export default HomePageComp;

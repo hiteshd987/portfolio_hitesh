@@ -1,3 +1,58 @@
-.Skills {
-    position: relative;
+
+// .cardSkills {
+//     width: 12rem;
+//     box-sizing: border-box;
+//     height: 7rem;
+//     margin: 2rem; // Ensure no extra margin
+//     display: flex;
+//     text-align: center;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .skills-wrapper {
+//     margin: 10rem 20rem; /* Add margin to the top and bottom */
+// }
+
+.skills-title {
+    // position: sticky;
+    top: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 4rem;
+}
+
+.skills-img-container {
+    background-color: rgb(141, 93, 84);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+}
+
+.cardSkills {
+    width: 15rem;
+    height: 10rem;
+    margin: 1rem; // Adjust margin as needed
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #403948; // Dark background for the card
+    color: #fff; // Light text color
+    border: 1px solid #444; // Optional border to add some contrast
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Subtle shadow for depth
+    transition: transform 0.2s; // Smooth transition for hover effect
+}
+
+.cardSkills:hover {
+    transform: scale(1.05); // Slightly enlarge the card on hover
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); // Enhance shadow on hover
+}
+
+.cardSkills h1 {
+    margin: 0; // Ensure no extra margin on paragraphs
 }

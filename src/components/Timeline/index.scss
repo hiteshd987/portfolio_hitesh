@@ -1,0 +1,74 @@
+
+.timeline-title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+.timeline-container {
+  // padding: 20px;
+  // max-height: calc(100vh - 20px);
+  // overflow-y: auto;
+  // scrollbar-width: thin; /* For Firefox */
+  // scrollbar-color: rgb(255, 255, 255) transparent;
+  h3 {
+    padding-top: 0.25em;
+    color: black;
+  }
+  
+  h5{
+    color: black;
+  }
+
+  .date {
+    color: rgb(255, 202, 201);
+  }
+
+  .workButton {
+    background-color: #06d6a0;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .workButton:hover {
+    background-color: #0ac593;
+  }
+
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    // padding: 2em 3em !important;
+  }
+
+  .vertical-timeline-element-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vertical-timeline-element-icon img {
+    width: 50%; 
+    height: 50%;
+    object-fit: contain;
+  }
+  
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+// @media only screen and (max-width: 1700px) {
+//   .vertical-timeline-element-date {
+//     display: block !important;
+//     float: none !important;
+//     color: rgb(44, 44, 44);
+//     margin-top: 1.5em;
+//   }
+// }
+
+

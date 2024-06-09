@@ -1,8 +1,9 @@
 import Image from 'next/image'
 // import profilePic from '../../app/vk.jpg'
-import { Row, Col } from "antd";
 import { motion } from 'framer-motion';
 import "./index.scss"
+import { Row, Col } from 'antd';
+import Link from 'next/link';
 
 const textVariants = {
     initial: {
@@ -44,48 +45,45 @@ const silderVariants = {
 const Description = () => {
     return (
         <div className='description'>
-            <div className='wrapper'>
-                <motion.div className='textContainer' variants={textVariants} initial="initial" animate="animate">
-                    <motion.h2 variants={textVariants}>HITESH DERKAR</motion.h2>
-                    <motion.h1 variants={textVariants}>Web Developer</motion.h1>
-                    <motion.div variants={textVariants} className='buttons'>
-                        <motion.button variants={textVariants}>See the Latest Works</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                <div className='wrapper'>
+                <motion.div className='profile-container' variants={textVariants} initial="initial" animate="animate">
+                    <motion.h1 variants={textVariants}>HITESH DERKAR</motion.h1>
+                    <motion.h2 variants={textVariants}>FrontEnd Developer/Student</motion.h2>
+                    <motion.div variants={textVariants} className='profile-desc-container'>
+                    <motion.p variants={textVariants}>
+                        Experienced web developer with expertise in Reactjs and Nextjs. Currently pursuing a Master's in
+                        Computer and Systems Engineering at Technical University Ilmenau, with a strong command over
+                        front-end technologies and Adobe Experience Manager.
+                    </motion.p>
                     </motion.div>
-                    <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+                    <motion.div variants={textVariants} className='profile-social-container'>
+                        <a href="https://github.com/hiteshd987" className="profile-social-anchor">
+                                <img src="/githubwhite.png" alt="Github" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/" className="profile-social-anchor">
+                                <img src="/linkedin.png" alt="Linkedin" />
+                        </a>    
+                    </motion.div>                          
+                    <motion.img variants={textVariants} src="/profile.jpg" alt="" className="profile-img-container" />
+                    {/* <img src='./profile.jpg' className='profile-img-container' /> */}
+                    {/* <motion.div variants={textVariants} className='buttons'>
+                        
+                        <motion.button variants={textVariants}>
+                            <a href="#Contact">
+                                Contact Me
+                            </a>
+                        </motion.button>
+                    </motion.div> */}
+                    <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" className="scroll-img" />
                 </motion.div>
-            </div>
+                </div>
             <motion.div className='slidingTextContainer' variants={silderVariants} initial="initial" animate="animate">
-                Student & Web Developer
+                Student & FrontEnd Developer
             </motion.div>
-            <div className='imageContainer'>
+            {/* <div className='imageContainer'>
                 <img src="/hero.png" alt="" />
-            </div>
+            </div> */}
         </div>
-
-        // <div>
-        //     <Row>
-        //         <Col span={10}>
-        //             <Image
-        //                 src={profilePic}
-        //                 width={700}
-        //                 height={700}
-        //                 alt="Picture of the author" 
-        //             />
-        //         </Col>
-                
-        //         <Col span={12}>
-        //             <h3>Software Engineer</h3>
-        //             <h1>Hitesh Derkar</h1> 
-        //              Experienced web developer with expertise in Reactjs and Nextjs. Currently pursuing a Master's in
-        //             Computer and Systems Engineering at Technical University Ilmenau, with a strong command over
-        //             front-end technologies and Adobe Experience Manager. Constantly upskilling with new tools and
-        //             technologies. Delivered high-quality work within tight timelines while adhering to industry-standard
-        //             coding and security practices. Strong communication and collaboration skills.
-        //             <p>More about me '---{'>'}' </p>
-        //         </Col>
-        //     </Row>
-        // </div>
     )
 }
 
