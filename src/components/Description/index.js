@@ -65,24 +65,15 @@ const Description = () => {
                         </a>    
                     </motion.div>                          
                     <motion.img variants={textVariants} src="/profile.jpg" alt="" className="profile-img-container" />
-                    {/* <img src='./profile.jpg' className='profile-img-container' /> */}
-                    {/* <motion.div variants={textVariants} className='buttons'>
-                        
-                        <motion.button variants={textVariants}>
-                            <a href="#Contact">
-                                Contact Me
-                            </a>
-                        </motion.button>
-                    </motion.div> */}
-                    <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" className="scroll-img" />
+                    <motion.img 
+                    variants={textVariants} 
+                    animate="scrollButton" 
+                    src="/scroll.png" alt="" className="scroll-img" />
                 </motion.div>
                 </div>
             <motion.div className='slidingTextContainer' variants={silderVariants} initial="initial" animate="animate">
                 Student & FrontEnd Developer
             </motion.div>
-            {/* <div className='imageContainer'>
-                <img src="/hero.png" alt="" />
-            </div> */}
         </div>
     )
 }

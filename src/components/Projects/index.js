@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import "./index.scss"
-// import {Row, Col, Card, Space} from 'antd'
+import {Row, Col, Card, Space} from 'antd'
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjectDialog from "./modal";
 import projectItems from './projectItems'
@@ -14,7 +14,7 @@ const Single = ({ item }) => {
       target: ref,
     });
   
-    const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+    const y = useTransform(scrollYProgress, [0, 1], [-30, 30]);
 
     const openDialog = () => {
       // setDialogText(item.desc);
@@ -23,13 +23,17 @@ const Single = ({ item }) => {
 
     return (
       <>
-      <section >
+      <section 
+      // ref={ref}
+      >
         <div className="container">
-          <div className="wrapper">
-            <div className="imageContainer" ref={ref}>
-              <img src={item.img} 
-              alt="" />
-            </div>
+          <Row gutter={[16, 16]} className="project-row"> 
+          {/* <div className="img-container"> */}
+            <Col className="project-img-col" xs={24} sm={12} md={12} lg={12}>
+              <img src={item.img} alt="" className="project-img" />
+            </Col>
+          {/* </div> */}
+            <Col xs={24} sm={12} md={12} lg={12} className="project-text-col"> 
             <motion.div className="textContainer" style={{y}}>
               <h3>{item.company}</h3>
               <h2>{item.title}</h2>
@@ -46,7 +50,8 @@ const Single = ({ item }) => {
               />
             )
             } 
-          </div>
+            </Col>
+          </Row>
         </div>
       </section>
       </>
@@ -68,14 +73,21 @@ const Projects = () => {
 
     return ( 
         <div className="projects" ref={ref}>
-            <div className="progress">
-                <h1>Featured Works</h1>
-                <motion.div style={{ scaleX }} className="progressBar"></motion.div>
-            </div>
-            {projectItems.map(item => (
-               <Single item={item} key={item.id} /> 
-            ))}
+          <Row className="progress" gutter={[16, 16]}>
+            <Col xs={24} sm={24} md={24} lg={24}>
+            <h1>Featured Works</h1>
+            <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+            </Col>
+          </Row>
+          <Row gutter={[16, 16]}>
+            <Col xs={24} sm={24} md={24} lg={24}>
+              {projectItems.map(item => (
+                <Single item={item} key={item.id} /> 
+              ))}
+            </Col>
+          </Row>
         </div>
+        
     )
 }
 

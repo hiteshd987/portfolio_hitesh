@@ -12,23 +12,26 @@
   // overflow-y: auto;
   // scrollbar-width: thin; /* For Firefox */
   // scrollbar-color: rgb(255, 255, 255) transparent;
-  h3 {
+  height: 100%;
+  .vertical-timeline-element-title {
+    font-weight: bold;
     padding-top: 0.25em;
     color: black;
   }
   
-  h5{
+  .vertical-timeline-element-subtitle {
     color: black;
   }
 
   .date {
     color: rgb(255, 202, 201);
+    // color: rgb(1, 1, 1);
   }
 
   .workButton {
     background-color: #06d6a0;
     text-decoration: none;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     color: white;
   }
@@ -62,13 +65,148 @@
 }
 
 
-// @media only screen and (max-width: 1700px) {
-//   .vertical-timeline-element-date {
-//     display: block !important;
-//     float: none !important;
-//     color: rgb(44, 44, 44);
-//     margin-top: 1.5em;
-//   }
-// }
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element {
+      margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .timeline-container {
+    .date {
+      color: rgb(1, 1, 1);
+    }
+  }
+}
+
+@media (max-height: 885px){
+  .timeline-container {
+    // padding: 20px;
+    // max-height: calc(100vh - 20px);
+    // overflow-y: auto;
+    // scrollbar-width: thin; /* For Firefox */
+    // scrollbar-color: rgb(255, 255, 255) transparent;\
+
+    // .vertical-timeline-element {
+    //   margin: 0 !important;
+    // }
+
+    .date {
+      color: rgb(1, 1, 1);
+    }
+
+    .vertical-timeline-element {
+      margin: 1rem 0 0;
+
+    .vertical-timeline-element-content {
+      padding: 0;
+      // margin: 0;
+    }
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .vertical-timeline-element-title {
+      font-weight: bold;
+      padding-top: 0.25em;
+      color: black;
+    }
+    
+    .vertical-timeline-element-subtitle {
+      color: black;
+    }
+  }
+}
+
+
+// new media queries
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 375px) {
+  .timeline-element-div {
+      margin-bottom: 2rem; /* Adjust the value to your desired gap */
+  }
+  .workButton {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    // width: 30vw;
+    // height: 4vh;
+    // font-size: 3vw;
+  }
+}
+
+/* Smartphones (portrait) common one ----------- */
+@media only screen and (min-width: 359px) and (min-height: 844px) { 
+
+  .timeline-container {
+    height: 100%;
+    .timeline-container row col {
+        height: inherit;
+      }
+    .timeline-element-div {
+      // height: 60%;
+    }
+    }
+    .vertical-timeline-element-title {
+      font-weight: bold;
+      padding-top: 0.25em;
+      color: black;
+    }
+    
+    .vertical-timeline-element-subtitle {
+      color: black;
+    }
+  
+    .date {
+      color: rgb(255, 202, 201);
+      // color: rgb(1, 1, 1);
+    }
+  
+    // .workButton {
+    //   background-color: #06d6a0;
+    //   text-decoration: none;
+    //   padding: 0.5rem 1rem;
+    //   border-radius: 5px;
+    //   color: white;
+    // }
+    
+    // .workButton:hover {
+    //   background-color: #0ac593;
+    // }
+  
+    .vertical-timeline-element-content {
+      box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+        0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+      // padding: 2em 3em !important;
+    }
+  
+    .vertical-timeline-element-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .vertical-timeline-element-icon img {
+      width: 50%; 
+      height: 50%;
+      object-fit: contain;
+    }
+  .timeline-element-div {
+    // height: 100%;
+    margin-bottom: 1rem; /* Adjust the value to your desired gap */
+  }
+.workButton {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  // width: 30vw;
+  // height: 4vh;
+  // font-size: 3vw;
+}
+}
 
 

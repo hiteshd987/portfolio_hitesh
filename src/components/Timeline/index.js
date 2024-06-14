@@ -2,6 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'; 
 import "react-vertical-timeline-component/style.min.css"
 import timelineItems from './timelineItems.js'
+import { Row, Col } from 'antd';
 import "./index.scss"
 // import WorkIcon from "./work.svg"
 // import SchoolIcon from "./school.svg"
@@ -12,9 +13,15 @@ const Timeline = () => {
   let workIconStyles = { background: "#06D6A0" }
   let schoolIconStyles = { background: "#f9c74f" }
   return (
-    <div>
-      <section className='timeline-container'>
-       <p className='timeline-title'>Timeline</p>
+      <div className='timeline-container'>
+      <Row justify="center">
+          <Col span={24}>
+            <p className='timeline-title'>Timeline</p>
+          </Col>
+      </Row>
+
+      <Row className='timeline-row' justify="center">
+          <Col xs={24} md={20}>
        <VerticalTimeline 
         animate={false}
        >
@@ -26,36 +33,39 @@ const Timeline = () => {
           item.buttonText !== ""
 
           return (
-            <VerticalTimelineElement
-              key={index}
-              date={item.date}
-              dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              // icon={<img src={isWorkIcon ? WorkIcon : SchoolIcon} alt="icon" />}
-              icon={<img src={item.img} alt="icon" />}
-              
-            >
-              <h3 className='vertical-timeline-element-title'>
-              {item.title}
-              </h3>
-              <h5 className='vertical-timeline-element-subtitle'>
-              {item.location}
-              </h5>
-              <p id="description">{item.description}</p>
-              {showButton && (
-                <a
-                  className="workButton"
-                  href="#Projects"
-                >
-                  {item.buttonText}
-                </a>
-              )}
-            </VerticalTimelineElement>
+            <div className='timeline-element-div'>
+              <VerticalTimelineElement
+                key={index}
+                date={item.date}
+                dateClassName="date"
+                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                // icon={<img src={isWorkIcon ? WorkIcon : SchoolIcon} alt="icon" />}
+                icon={<img src={item.img} alt="icon" />}
+                
+              >
+                <p className='vertical-timeline-element-title'>
+                {item.title}
+                </p>
+                <p className='vertical-timeline-element-subtitle'>
+                {item.location}
+                </p>
+                <p id="description">{item.description}</p>
+                {showButton && (
+                  <a
+                    className="workButton"
+                    href="#Projects"
+                  >
+                    {item.buttonText}
+                  </a>
+                )}
+              </VerticalTimelineElement>
+            </div>
           )
         })}
        </VerticalTimeline>
-       </section>
-    </div>
+       </Col>
+      </Row>
+      </div>
   );
 };
 

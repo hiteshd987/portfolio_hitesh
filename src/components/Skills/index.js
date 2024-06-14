@@ -3,28 +3,27 @@ import {Card, Row, Col} from 'antd';
 import './index.scss'; // Assuming you have a Timeline.css file for styling
 
 const allSkills = [
-  "Reactjs", "Nextjs", "Javascript", "Redux", "Git", "Jira", "HTML", "CSS", "SCSS", "Bootstrap", 
-  "Material UI", "Ant Design", "Adobe Experience Manager", "Docker"
+  "Reactjs", "Nextjs", "Javascript", "Redux", "Git", "Jira", "HTML", "CSS", "SCSS", 
+  "Material UI", "Ant Design", "Adobe Experience Manager","Bootstrap", "Docker"
 ] 
 
 const Skills = () => {
 
   return (
     <>
-    <section className="skills-wrapper">
-      <Row>
-      <Col className="gutter-row skills-img-container" span={12}>
+    <div className="skills-wrapper">
+      <Row gutter={[16, 16]}>
+      <Col className="skills-img-container" xs={24} sm={24} md={24} lg={12}>
         <h1 className="skills-title">Skills</h1>
         {/* <img src='./skills.png' /> */}
       </Col>
-      <Col className="gutter-row" span={12}>
+      <Col xs={24} sm={24} md={24} lg={12} >
       <div className="skills-container">
-          <Row 
-          // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+          <Row gutter={[24, 24]}
           >
           {allSkills.map((item, index) => (
           <>
-          <Col key={index} className="gutter-row" span={8}>
+          <Col key={index} xs={8} sm={8} md={8} lg={8}>
             <Card
               className="cardSkills"
               >
@@ -37,7 +36,7 @@ const Skills = () => {
       </div>
       </Col>
       </Row>
-    </section>
+    </div>
     </>
   );
 };

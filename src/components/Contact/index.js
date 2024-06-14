@@ -6,22 +6,24 @@ import "./index.scss"
 const Contact = () => {
     return (
         <>
-            <h1 className="contact-title">Contact Details</h1>
-            <Row className='contact-row'>
-                <Col className="gutter-row" span={3}>
-                </Col>
-                <Col className="gutter-row" span={11}>
-                <Space className="contact-space" direction="vertical" >
+            <p className="contact-title">Contact Details</p>
+            <div className='contact-container'>
+            <Row className='contact-row' gutter={[16, 16]}>
+                <Col xs={24} sm={24} md={12} lg={12}>
+                <Space className="contact-space" direction="vertical" size='large'>
                     <Card
                     title="Hitesh Derkar"
                     className="contact-card"
                     //   extra={<a href="#">More</a>}
-                    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                    // cover={<img alt="example" src="profile.jpg" />}
                     >
-                    <p>hiteshder222@gmail.com</p>
-                    <p>+4915510448901</p>
-                    <p>Ilmenau, Germany</p>
-                    <div className="social">
+                    <div className='card-details-container'>
+                    <div className='card-details'>
+                        <p>hiteshder222@gmail.com</p>
+                        <p>+4915510448901</p>
+                        <p>Ilmenau, Germany</p>
+                    </div>
+                    <div className="social-container card-details">
                         <a href="https://github.com/hiteshd987">
                             <img src="/github.svg" alt="Github" />
                         </a>
@@ -29,21 +31,22 @@ const Contact = () => {
                             <img src="/linkedin.png" alt="Linkedin" />
                         </a>
                     </div>
+                    </div>
                     </Card>
                 </Space>
                 </Col>
-                <Col className="gutter-row" span={10}>
-                <Row>
-                    <Col className="gutter-row form-col" span={18}>
+                <Col xs={24} sm={24} md={12} lg={12}>
+                <Row gutter={[16, 16]}>
+                    <Col xs={24} md={12}>
                       <h1>Get in Touch</h1>
                     </Col>
-                    <Col className="gutter-row form-col" span={18}>
+                    <Col className="form-col" xs={24}>
                       <Input placeholder='Name' />
                     </Col>
-                    <Col className="gutter-row form-col" span={18}>
+                    <Col className="form-col" xs={24}>
                       <Input placeholder='Email' />
                     </Col>
-                    <Col className="gutter-row form-col" span={18}>
+                    <Col className="form-col" xs={24}>
                      {/* <Input placeholder='Message' /> */}
                      <TextArea
                         showCount
@@ -56,12 +59,14 @@ const Contact = () => {
                         }}
                     />
                     </Col>
-                    <Col className="gutter-row form-col" span={18}>
+                    <Col className="form-col" xs={24}>
                      <Button type="primary" block>Send</Button>
                     </Col>
                 </Row>            
             </Col>
             </Row>
+            </div>
+            
         </>
     )
 }

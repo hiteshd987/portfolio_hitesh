@@ -27,3 +27,10 @@ section {
   scroll-snap-align: center;
   overflow: hidden;
 }
+
+/* @media (max-width: 768px) {
+  section {
+    height: auto;
+    padding: 20px;
+  }
+} */
