@@ -9,7 +9,7 @@ const Contact = () => {
             <p className="contact-title">Contact Details</p>
             <div className='contact-container'>
             <Row className='contact-row' gutter={[16, 16]}>
-                <Col xs={24} sm={24} md={12} lg={12}>
+                <Col xs={24} sm={12} md={12} lg={10}>
                 <Space className="contact-space" direction="vertical" size='large'>
                     <Card
                     title="Hitesh Derkar"
@@ -35,7 +35,7 @@ const Contact = () => {
                     </Card>
                 </Space>
                 </Col>
-                <Col xs={24} sm={24} md={12} lg={12}>
+                <Col xs={24} sm={12} md={12} lg={20}>
                 <Row gutter={[16, 16]}>
                     <Col xs={24} md={12}>
                       <h1>Get in Touch</h1>

@@ -25,6 +25,7 @@ const Timeline = () => {
        <VerticalTimeline 
         animate={false}
        >
+        <div className='timeline-elements-container'>
         {timelineItems.map((item, index) => {
           let isWorkIcon = item.icon === "work";
           let showButton =
@@ -33,35 +34,34 @@ const Timeline = () => {
           item.buttonText !== ""
 
           return (
-            <div className='timeline-element-div'>
-              <VerticalTimelineElement
-                key={index}
-                date={item.date}
-                dateClassName="date"
-                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-                // icon={<img src={isWorkIcon ? WorkIcon : SchoolIcon} alt="icon" />}
-                icon={<img src={item.img} alt="icon" />}
-                
-              >
-                <p className='vertical-timeline-element-title'>
-                {item.title}
-                </p>
-                <p className='vertical-timeline-element-subtitle'>
-                {item.location}
-                </p>
-                <p id="description">{item.description}</p>
-                {showButton && (
-                  <a
-                    className="workButton"
-                    href="#Projects"
-                  >
-                    {item.buttonText}
-                  </a>
-                )}
-              </VerticalTimelineElement>
-            </div>
+            <VerticalTimelineElement
+              key={index}
+              date={item.date}
+              dateClassName="date"
+              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+              // icon={<img src={isWorkIcon ? WorkIcon : SchoolIcon} alt="icon" />}
+              icon={<img src={item.img} alt="icon" />}
+              
+            >
+              <p className='vertical-timeline-element-title'>
+              {item.title}
+              </p>
+              <p className='vertical-timeline-element-subtitle'>
+              {item.location}
+              </p>
+              <p id="description">{item.description}</p>
+              {showButton && (
+                <a
+                  className="workButton"
+                  href="#Projects"
+                >
+                  {item.buttonText}
+                </a>
+              )}
+            </VerticalTimelineElement>
           )
         })}
+        </div>
        </VerticalTimeline>
        </Col>
       </Row>
