@@ -26,7 +26,7 @@ const Single = ({ item }) => {
       <section 
       // ref={ref}
       >
-        <div className="container">
+        <div className="container-elements">
           <Row gutter={[16, 16]} className="project-row"> 
           {/* <div className="img-container"> */}
             <Col className="project-img-col" xs={24} sm={12} md={12} lg={12}>
@@ -79,7 +79,7 @@ const Projects = () => {
             <motion.div style={{ scaleX }} className="progressBar"></motion.div>
             </Col>
           </Row>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 16]} className="projects-container">
             <Col xs={24} sm={24} md={24} lg={24}>
               {projectItems.map(item => (
                 <Single item={item} key={item.id} /> 

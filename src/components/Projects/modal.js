@@ -16,7 +16,7 @@ const ProjectDialog = ({isDialogOpen, dialogText, setIsDialogOpen}) => {
       title={dialogText.company} open={isDialogOpen} 
       onOk={handleOk} onCancel={handleCancel}
       className="custom-modal"
-      style={{ height: '70vh' }}
+      // style={{ height: '70vh' }}
       >
         {/* <p>{dialogText.dialogDetails}</p> */}
         <ul>

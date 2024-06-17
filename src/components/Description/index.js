@@ -78,17 +78,18 @@ const Description = () => {
                 Student & FrontEnd Developer
             </motion.div>
         </div> */}
+
         <div className='description'>
             <Row gutter={[16, 16]} justify='center' className='profile-container-row'>
-                <Col xs={24} sm={24} md={24} lg={24} align="middle">
+                <Col xs={24} sm={24} md={24} lg={24} align="middle" className='profile-container-col'>
                 <motion.div className='profile-container' variants={textVariants} initial="initial" animate="animate">
-                    <Col xs={24} sm={24} md={24} lg={24}>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element'>
                         <motion.h1 variants={textVariants}>HITESH DERKAR</motion.h1>
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24}>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element'>
                         <motion.h2 variants={textVariants}>FrontEnd Developer/Student</motion.h2>
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24}>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element'>
                         <motion.div variants={textVariants} className='profile-desc-container'>
                             <motion.p variants={textVariants}>
                                 Experienced web developer with expertise in Reactjs and Nextjs. Currently pursuing a Master's in
@@ -97,22 +98,26 @@ const Description = () => {
                             </motion.p>
                         </motion.div>
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24} className='profile-social-container'>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element profile-social-container'>
                         <motion.div variants={textVariants} className='profile-social-container'>
-                            <a href="https://github.com/hiteshd987" className='profile-social-container'>
+                            <a href="https://github.com/hiteshd987" 
+                            // className='profile-social-container'
+                            >
                                     <img src="/githubwhite.png" alt="Github" />
                             </a>
-                            <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/" className='profile-social-container'>
+                            <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/" 
+                            // className='profile-social-container'
+                            >
                                     <img src="/linkedin.png" alt="Linkedin" />
                             </a>    
                         </motion.div>
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24} className='profile-img-container'>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element profile-img-container'>
                         <motion.div className='profile-img-container'>                          
                         <motion.img variants={textVariants} src="/profile.jpg" alt="" className="profile-img" />
                         </motion.div>
                     </Col>
-                    <Col xs={24} sm={24} md={24} lg={24}>
+                    <Col xs={24} sm={24} md={24} lg={24} className='profile-element' >
                         <motion.img 
                         variants={textVariants} 
                         animate="scrollButton" 
