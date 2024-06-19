@@ -1,5 +1,5 @@
 
-// new
+// ********** Skills ***********
 
 .skills-wrapper {
     margin: 1rem;
@@ -8,15 +8,13 @@
         height: inherit;
     }
     .skills-img-container{
-        // height: auto;
         background-color: rgb(141, 93, 84);
         .skills-title {
-            // position: sticky;
             top: 0;
-            padding-top: 50px;
             text-align: center;
             color: orange;
             font-size: 4rem;
+            height: inherit;
         }
         h1 {
             height: 10vh;
@@ -28,11 +26,11 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background-color: #403948; // Dark background for the card
-            color: #fff; // Light text color
-            border: 1px solid #444; // Optional border to add some contrast
-            border-radius: 8px; // Rounded corners
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Subtle shadow for depth
+            background-color: #403948;
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s;
             height: 10vh;
             h1 {
@@ -44,18 +42,18 @@
 }
 
 .skills-card:hover {
-    transform: scale(1.05); // Slightly enlarge the card on hover
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); // Enhance shadow on hover
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
+// portrait large screen
 
 @media only screen and (min-width: 992px) {
     .skills-wrapper {
         .skills-card-container {
             .skills-card {
-                //  height: 10vh;
                  h1 {
                      font-size: 2vh;
-                    //  font-weight: bolder;
                  }
             }
         }
@@ -68,12 +66,16 @@
 @media only screen and (min-width: 667px) and (max-width: 932px) and (max-height: 900px) 
 {
     .skills-wrapper {
+        .skills-img-container{
+            .skills-title { 
+                font-size: 3rem;
+                height: inherit;
+            }
+        }
         .skills-card-container {
             .skills-card {
-                //  height: 10vh;
                  h1 {
                      font-size: 3vh;
-                    //  font-weight: bolder;
                  }
             }
         }

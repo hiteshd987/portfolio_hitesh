@@ -1,9 +1,7 @@
  
-// ****** working currently ************
+// ******** Description common  ************
 .description {
-  // height: 100vh;
   .profile-container-row {
-    // margin: 3rem;
       .profile-container {
         padding: 0 1rem;;
       }
@@ -43,7 +41,6 @@
   .profile-img-container{
     width: 10rem;
     height: 10rem;
-    // margin-bottom: 5rem;
     img {
       width: inherit;
       height: inherit;
@@ -55,6 +52,16 @@
   .scroll-img {
     width: 3rem;
   }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 20vh;
+    bottom: -30px;
+    white-space: nowrap;
+    color: #ffffff09;
+    text-align: center;
+  }
+
 }
 
 
@@ -63,7 +70,6 @@
   .description {
     height: 100vh;
     .profile-container-row {
-    //   margin: 3rem;
         .profile-element {
           margin-bottom: 2.5rem;
         }
@@ -72,29 +78,9 @@
         }
     }
   
-    // .profile-social-container{
-    //   display: flex;
-    //   width: 4rem;
-    //   height: 2rem;
-    //   justify-content: center;
-    //   gap: 10px;
-    //   a {
-    //     display: inline-block;
-    //     justify-content: center;
-    //     margin-bottom: 2rem;
-    //     width: inherit;
-    //     height: inherit;
-    //   }
-    //   img {
-    //     width: 100%;
-    //     height: 100%;
-    //   }
-    // }
-  
     .profile-img-container{
       width: 15rem;
       height: 15rem;
-      // margin-bottom: 5rem;
     }
 
     .scroll-img {
@@ -109,7 +95,6 @@
     .description {
       height: 100vh;
       .profile-container-row {
-      //   margin: 3rem;
           .profile-container {
             padding: 0 3rem;
           }
@@ -132,13 +117,11 @@
       .profile-social-container{
         width: 6rem;
         height: 3rem;
-        // gap: 10px;
       }
     
       .profile-img-container{
         width: 20rem;
         height: 20rem;
-        // margin-bottom: 5rem;
       }
       .scroll-img {
         width: 5rem;
@@ -151,7 +134,6 @@
     .description {
       height: 100vh;
       .profile-container-row {
-      //   margin: 3rem;
           .profile-container {
             padding: 0 4rem;
           }
@@ -176,13 +158,11 @@
       .profile-social-container{
         width: 6rem;
         height: 3rem;
-        // gap: 10px;
       }
     
       .profile-img-container{
         width: 25rem;
         height: 25rem;
-        // margin-bottom: 5rem;
       }
       .scroll-img {
         width: 6rem;
@@ -198,7 +178,6 @@
     .description {
       height: 100vh;
       .profile-container-row {
-      //   margin: 3rem;
           .profile-container {
             padding: 0 1rem;
           }
@@ -239,9 +218,7 @@
 // ipad landscape
   @media only screen and (min-width: 992px) and (max-height: 820px) { 
     .description {
-      // height: 100vh;
       .profile-container-row {
-      //   margin: 3rem;
           .profile-container {
             padding: 0 3rem;
           }
@@ -264,110 +241,14 @@
       .profile-social-container{
         width: 5rem;
         height: 2rem;
-        // gap: 10px;
       }
     
       .profile-img-container{
         width: 20rem;
         height: 20rem;
-        // margin-bottom: 5rem;
       }
       .scroll-img {
         width: 4rem;
       }
     }
 }
-
-// ************ test **************
-// .description {
-//   // height: 100vh;
-//   .profile-container-row {
-//     // margin: 3rem;
-//       .profile-container {
-//         padding: 0 1rem;;
-//       }
-//       .profile-element {
-//         margin-bottom: 1rem;
-//       }
-//       h1 {
-//       font-size: 2.5rem;
-//       color: rebeccapurple;
-//       letter-spacing: 2px;
-//       }
-
-//       h2 {
-//         font-size: 1.5rem;
-//       }
-//   }
-
-//   .profile-social-container{
-//     display: flex;
-//     width: 4rem;
-//     height: 2rem;
-//     justify-content: center;
-//     gap: 10px;
-//     a {
-//       display: inline-block;
-//       justify-content: center;
-//       margin-bottom: 2rem;
-//       width: inherit;
-//       height: inherit;
-//     }
-//     img {
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-
-//   .profile-img-container{
-//     width: 10rem;
-//     height: 10rem;
-//     // margin-bottom: 5rem;
-//     img {
-//       width: inherit;
-//       height: inherit;
-//       border-radius: 50%;
-//       object-fit: cover;
-//     }
-//   }
-
-//   .scroll-img {
-//     width: 3rem;
-//   }
-// }
-
-// .description {
-//   height: 100vh;
-//   .profile-container-row{
-//     height: inherit;
-//     // .profile-container {
-
-//     // }
-//     .profile-element{
-//       // gap: 2rem;
-//       margin-bottom: calc(3vw + 5vh);
-//       h1 {
-//         font-size: 6vw;
-//         color: rebeccapurple;
-//         letter-spacing: 2px;
-//       }
-//       h2 {
-//         font-size: 4vw;
-//       }
-//       p {
-//         font-size: 3vw;
-//       }
-//       .profile-img-container {
-//         img {
-//           width: 30vw;
-//           height: 30vw;
-//           border-radius: 50%;
-//           object-fit: cover;
-//         }
-//       }
-//     }
-//   }
-//   .scroll-img {
-//     width: 10vw;
-//   }
-// }

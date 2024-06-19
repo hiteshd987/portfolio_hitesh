@@ -8,14 +8,9 @@
 }
 
 .timeline-container {
-  // padding: 20px;
-  // max-height: calc(100vh - 20px);
-  // overflow-y: auto;
-  // scrollbar-width: thin; /* For Firefox */
-  // scrollbar-color: rgb(255, 255, 255) transparent;
   .vertical-timeline-element-title {
     font-weight: bold;
-    padding-top: 0.25em;
+    padding-top: 0.25rem;
     color: black;
   }
   
@@ -25,10 +20,9 @@
 
   .date {
     color: rgb(3, 3, 3);
-    // color: rgb(1, 1, 1);
   }
 
-  .workButton {
+  .work-button {
     background-color: #06d6a0;
     text-decoration: none;
     padding: 0.5rem;
@@ -36,14 +30,13 @@
     color: white;
   }
   
-  .workButton:hover {
+  .work-button:hover {
     background-color: #0ac593;
   }
 
   .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-    // padding: 2em 3em !important;
+      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
   }
 
   .vertical-timeline-element-icon {
@@ -66,7 +59,7 @@
 
 // portrait
 
- /* change comment Extra small devices (phones, 600px and down) */
+ /* change comment Extra small devices */
  @media only screen and (max-width: 375px) {
   .timeline-container {
         padding: 10px;
@@ -76,16 +69,9 @@
         margin: 1rem 0;
         .vertical-timeline-element-content {
           padding: 0;
-          // margin: 0;
         }
         .vertical-timeline-element-title {
-          font-weight: bold;
-          padding-top: 0.25em;
-          color: black;
-        }
-        
-        .vertical-timeline-element-subtitle {
-          color: black;
+          padding-top: 0.25rem;
         }
         p {
             padding: 0 10px;
@@ -93,15 +79,12 @@
           }
         .date {
           padding: 10px;
-            color: rgb(1, 1, 1);
         }
         
-      .workButton {
+      .work-button {
         position: absolute;
         bottom: 5px;
         right: 5px;
-        // width: 25vw;
-        // height: 5vh;
         font-size: 3vw;
         color: black;
       }
@@ -113,11 +96,7 @@
 @media only screen and (min-width: 359px) and (min-height: 844px) and (max-height: 932px) { 
 
   .timeline-title {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 0;
-    color: orange;
+    font-size: 10vw;
   }
   .timeline-container {
     .vertical-timeline {
@@ -125,14 +104,11 @@
       .vertical-timeline-element {
           margin: 2.5rem 0;
           .vertical-timeline-element-title {
-            font-weight: bold;
             padding-top: 0.25em;
-            color: black;
             font-size: 1rem;
           }
           
           .vertical-timeline-element-subtitle {
-            color: black;
             font-size: 0.7rem;
           }
           p {
@@ -141,11 +117,10 @@
             }
           .date {
             padding: 10px;
-            color: rgb(1, 1, 1);
             font-size: 0.6rem;
           }
           
-        .workButton {
+        .work-button {
           position: absolute;
           bottom: 5px;
           right: 5px;
@@ -160,31 +135,16 @@
 // ipad portrait
 @media only screen and (min-width: 768px) and (max-width: 1169px) and (max-height: 1366px) { 
   .timeline-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0 2rem;
-  color: orange;
+  font-size: 7vw;
 }
     .timeline-container {
-      // padding: 10px;
       max-height: calc(100vh - 20px);
       overflow-y: auto;
-    // .vertical-timeline-element {
-      // margin: 1rem 0;
-      // .vertical-timeline-element-content {
-        // padding: 2rem;
-        // margin: 0;
-      // }
       .vertical-timeline-element-title {
-        font-weight: bold;
-        padding-top: 0.25em;
-        color: black;
         font-size: 2rem;
       }
       
       .vertical-timeline-element-subtitle {
-        color: black;
         font-size: 1.5rem;
       }
       p {
@@ -193,55 +153,49 @@
         }
       .date {
         padding: 10px;
-        color: rgb(1, 1, 1);
         font-size: 1rem;
       }
       
-      .workButton {
+      .work-button {
         position: absolute;
         bottom: 5px;
         right: 5px;
-        // width: 25vw;
-        // height: 5vh;
-        // font-size: 3vw;
         color: black;
       }
     // }
   }
 }
 
-/* Large devices (portrait) (laptops/desktops, 992px and up) */
+/* Large devices (portrait) */
 @media only screen and (min-width: 1170px) {
   .timeline-title {
     font-size: 3vw;
   }
   .timeline-container {
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
     .vertical-timeline-element {
-    .date {
-      color: rgb(255, 202, 201);
-    }
-    .vertical-timeline-element-title {
-    font-weight: bold;
-    padding-top: 0.25em;
-    color: black;
-    font-size: 1.5rem;
-    }
+      .date {
+        color: rgb(255, 202, 201);
+      }
+      .vertical-timeline-element-title {
+        font-size: 1.5rem;
+      }
 
-    .vertical-timeline-element-subtitle {
-    color: black;
-    font-size: 1;
-    }
-    p {
-    padding: 10px;
-    margin: 0;
-    }
+      .vertical-timeline-element-subtitle {
+        font-size: 1;
+      }
+      p {
+      padding: 10px;
+      margin: 0;
+      }
 
-    .workButton {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    color: black;
-    }
+      .work-button {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      color: black;
+      }
     }
   }
 }
@@ -259,17 +213,12 @@
         margin: 1rem 0;
         .vertical-timeline-element-content {
           padding: 0;
-          // margin: 0;
         }
         .vertical-timeline-element-title {
-          font-weight: bold;
-          padding-top: 0.25em;
-          color: black;
           font-size: 1rem;
         }
         
         .vertical-timeline-element-subtitle {
-          color: black;
           font-size: 0.7rem;
         }
         p {
@@ -282,34 +231,12 @@
           font-size: 0.5rem;
         }
         
-      .workButton {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-        // width: 25vw;
-        // height: 5vh;
-        // font-size: 3vw;
-        color: black;
-      }
+        .work-button {
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          color: black;
+        }
     }
-}
-
-  // .vertical-timeline-element {
-  //   margin: 0.1rem;
-  //   .date {
-  //       color: rgb(1, 1, 1);
-  //   }
-  // // .timeline-element-container {
-  //   // height: 100%;
-  //   // margin-bottom: 0.9rem; /* Adjust the value to your desired gap */
-  // // }
-  // .workButton {
-  //   position: absolute;
-  //   bottom: 10px;
-  //   right: 10px;
-  //   // width: 30vw;
-  //   // height: 4vh;
-  //   // font-size: 3vw;
-  // }
-  // }
+  }
 }

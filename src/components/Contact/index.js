@@ -14,8 +14,6 @@ const Contact = () => {
                     <Card
                     title="Hitesh Derkar"
                     className="contact-card"
-                    //   extra={<a href="#">More</a>}
-                    // cover={<img alt="example" src="profile.jpg" />}
                     >
                     <div className='card-details-container'>
                     <div className='card-details'>
@@ -47,11 +45,9 @@ const Contact = () => {
                       <Input placeholder='Email' />
                     </Col>
                     <Col className="form-col" xs={24}>
-                     {/* <Input placeholder='Message' /> */}
                      <TextArea
                         showCount
                         maxLength={100}
-                        // onChange={onChange}
                         placeholder="Message"
                         style={{
                             height: 120,

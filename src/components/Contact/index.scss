@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     left: 0;
-    // padding-top: 50px;
     text-align: center;
     color: orange;
     font-size: 3rem;
@@ -10,28 +9,18 @@
 
 .contact-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Ensure it takes at least the full viewport height */
-    padding: 0 1rem; /* Add some padding for better spacing */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
 
     .contact-row {
-        // margin: 4rem 0;
         margin-bottom: 9rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Center horizontally within the contact container */
-        align-items: flex-start; /* Align items to the start vertically */
-        width: 100%; /* Ensure it takes full width of the parent container */
-
-        // .contact-card {
-            // width: 50vh;
-            // height: auto;
-            // img {
-            //     height: 30rem;
-            // }
-
-        // }
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
 
         .contact-space {
             display: flex;
@@ -41,7 +30,6 @@
         }
 
         .contact-card {
-            // width: 400px;
             margin-top: auto;
           }
 
@@ -52,7 +40,6 @@
             align-items: center;
         
             .card-details {
-                // width: 50%;
                 flex-grow: 1; 
                 p{
                     font-weight: bold;
@@ -60,13 +47,10 @@
             }
 
             .social-container {
-                // width: auto;
-                // height: auto;
                 display: flex;
                 justify-content: flex-start;
 
                 a {
-                    // width: 10vw;
                     height: 6vh;
                     margin-left: 10px;
                 }
@@ -79,47 +63,6 @@
         }
     }
 }
-
-// @media (max-width: 768px) {
-//     .contact-row {
-//       flex-direction: column;
-//     }
-  
-//     .contact-space {
-//       order: 2;
-//     }
-  
-//     .form-col {
-//       order: 1;
-//     }
-  
-//     .card-details-container {
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-  
-//     .social-container {
-//       margin-top: 10px;
-//       justify-content: flex-start;
-//     }
-  
-//     .social-container a {
-//       margin-left: 0;
-//       margin-right: 10px;
-//     }
-//   }
-
-// @media (max-width: 480px) {
-//     .contact-title {
-//         position: sticky;
-//         top: 0;
-//         left: 0;
-//         // padding-top: 50px;
-//         text-align: center;
-//         color: orange;
-//         font-size: 2rem;
-//     }
-// }
 
 // portrait
 
@@ -157,8 +100,4 @@
       }
     }
   }
-  // .contact-container {
-  //   height: calc(100vh - 20px);
-  //   overflow-y: auto;
-  // }
 }

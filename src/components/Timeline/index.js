@@ -39,7 +39,6 @@ const Timeline = () => {
               date={item.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              // icon={<img src={isWorkIcon ? WorkIcon : SchoolIcon} alt="icon" />}
               icon={<img src={item.img} alt="icon" />}
               
             >
@@ -52,7 +51,7 @@ const Timeline = () => {
               <p id="description">{item.description}</p>
               {showButton && (
                 <a
-                  className="workButton"
+                  className="work-button"
                   href="#Projects"
                 >
                   {item.buttonText}

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Button, Modal } from 'antd';
+import React from 'react';
+import { Modal } from 'antd';
 const ProjectDialog = ({isDialogOpen, dialogText, setIsDialogOpen}) => {
 
     const handleOk = () => {
@@ -16,9 +16,7 @@ const ProjectDialog = ({isDialogOpen, dialogText, setIsDialogOpen}) => {
       title={dialogText.company} open={isDialogOpen} 
       onOk={handleOk} onCancel={handleCancel}
       className="custom-modal"
-      // style={{ height: '70vh' }}
       >
-        {/* <p>{dialogText.dialogDetails}</p> */}
         <ul>
         {dialogText.dialogDetails.map((detail, index) => (
           <li key={index}>{detail}</li>

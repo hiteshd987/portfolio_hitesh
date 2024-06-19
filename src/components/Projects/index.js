@@ -28,13 +28,11 @@ const Single = ({ item }) => {
       >
         <div className="container-elements">
           <Row gutter={[16, 16]} className="project-row"> 
-          {/* <div className="img-container"> */}
             <Col className="project-img-col" xs={24} sm={12} md={12} lg={12}>
               <img src={item.img} alt="" className="project-img" />
             </Col>
-          {/* </div> */}
             <Col xs={24} sm={12} md={12} lg={12} className="project-text-col"> 
-            <motion.div className="textContainer" style={{y}}>
+            <motion.div className="text-container" style={{y}}>
               <h3>{item.company}</h3>
               <h2>{item.title}</h2>
               <p><b>Technologies:</b> {item.Technologies}</p>
@@ -76,7 +74,7 @@ const Projects = () => {
           <Row className="progress" gutter={[16, 16]}>
             <Col xs={24} sm={24} md={24} lg={24}>
             <h1>Featured Works</h1>
-            <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+            <motion.div style={{ scaleX }} className="progress-bar"></motion.div>
             </Col>
           </Row>
           <Row gutter={[16, 16]} className="projects-container">
@@ -86,8 +84,7 @@ const Projects = () => {
               ))}
             </Col>
           </Row>
-        </div>
-        
+        </div> 
     )
 }
 

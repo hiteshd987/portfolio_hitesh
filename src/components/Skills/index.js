@@ -10,12 +10,11 @@ const allSkills = [
 const Skills = () => {
 
   return (
-    <>
+
     <div className="skills-wrapper">
       <Row gutter={[16, 16]} className='skills-row-main'>
       <Col className="skills-img-container" xs={24} sm={24} md={24} lg={10}>
         <h1 className="skills-title">Skills</h1>
-        {/* <img src='./skills.png' /> */}
       </Col>
       
       <Col xs={24} sm={24} md={24} lg={14} >
@@ -35,7 +34,6 @@ const Skills = () => {
       </Col>
       </Row>
     </div>
-    </>
   );
 };
 
