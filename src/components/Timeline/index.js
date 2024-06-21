@@ -2,7 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'; 
 import "react-vertical-timeline-component/style.min.css"
 import timelineItems from './timelineItems.js'
-import { Row, Col } from 'antd';
+import { Row, Col, Image } from 'antd';
 import "./index.scss"
 
 const Timeline = () => {
@@ -35,7 +35,7 @@ const Timeline = () => {
               date={item.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={<img src={item.img} alt="icon" />}
+              icon={<Image src={item.img} alt="timelineicon" />}
               
             >
               <p className='vertical-timeline-element-title'>

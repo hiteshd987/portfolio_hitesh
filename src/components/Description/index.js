@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd';
+import { Row, Col, Image } from 'antd';
 import { motion } from 'framer-motion';
 import "./index.scss"
 
@@ -26,20 +26,6 @@ const textVariants = {
     }
 };
 
-// const sliderVariants = {
-//     initial: {
-//         x: 0,
-//     },
-//     animate: {
-//         x:"-220%",
-//         transition: {
-//             repeat: Infinity,
-//             repeatType: "mirror",
-//             duration: 20,
-//         },
-//     },
-// };
-
 const Description = () => {
     return (
         <div className='description'>
@@ -65,11 +51,11 @@ const Description = () => {
                         <motion.div variants={textVariants} className='profile-social-container'>
                             <a href="https://github.com/hiteshd987" 
                             >
-                                    <img src="/github.png" alt="Github" />
+                                    <Image src="/github.png" alt="Github" />
                             </a>
                             <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/" 
                             >
-                                    <img src="/linkedin.png" alt="Linkedin" />
+                                    <Image src="/linkedin.png" alt="Linkedin" />
                             </a>    
                         </motion.div>
                     </Col>
@@ -86,9 +72,6 @@ const Description = () => {
                     </Col>
                 </motion.div> 
                 </Col>
-                {/* <motion.div className='sliding-text-container' variants={sliderVariants} initial="initial" animate="animate">
-                   <span>Student & FrontEnd Developer</span> 
-                </motion.div> */}
             </Row>
         </div>      
     )

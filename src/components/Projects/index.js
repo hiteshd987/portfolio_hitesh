@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import "./index.scss"
-import {Row, Col} from 'antd'
+import {Row, Col, Image} from 'antd'
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjectDialog from "./modal";
 import projectItems from './projectItems'
@@ -26,7 +26,7 @@ const Single = ({ item }) => {
         <div className="container-elements">
           <Row gutter={[16, 16]} className="project-row"> 
             <Col className="project-img-col" xs={24} sm={12} md={12} lg={12}>
-              <img src={item.img} alt="" className="project-img" />
+              <Image src={item.img} alt="" className="project-img" />
             </Col>
             <Col xs={24} sm={12} md={12} lg={12} className="project-text-col"> 
             <motion.div className="text-container" style={{y}}>

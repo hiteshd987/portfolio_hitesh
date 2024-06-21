@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Space, Row, Col, Input, Button } from 'antd';
+import { Card, Space, Row, Col, Input, Button, Image } from 'antd';
 const {TextArea} = Input;
 import "./index.scss"
 
@@ -23,10 +23,10 @@ const Contact = () => {
                     </div>
                     <div className="social-container card-details">
                         <a href="https://github.com/hiteshd987">
-                            <img src="/github2.svg" alt="Github" />
+                            <Image src="/github2.svg" alt="Github" />
                         </a>
                         <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/">
-                            <img src="/linkedin.png" alt="Linkedin" />
+                            <Image src="/linkedin.png" alt="Linkedin" />
                         </a>
                     </div>
                     </div>
