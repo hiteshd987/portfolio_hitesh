@@ -4,10 +4,11 @@ The project makes familiar with personal and academic details and also professio
 
 ## Getting Started
 
-To install all the required dependencies after cloning or downloading the project run
+To install all the required dependencies after cloning or downloading the project run:
 
 ```bash
 npm install
+```
 
 After that Run the development server:
 
