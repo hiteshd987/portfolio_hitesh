@@ -1,6 +1,6 @@
 # Portfolio
 
-The project makes familiar with personal and academic details and also professional experience. 
+The project makes you familiar with my academic and professional journey 
 
 ## Getting Started
 
