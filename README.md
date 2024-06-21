@@ -1,13 +1,14 @@
 # Portfolio
 
-The project makes familiar with personal and academic details and also professional experience. 
+The project makes you familiar with my academic and professional journey 
 
 ## Getting Started
 
-To install all the required dependencies after cloning or downloading the project run
+To install all the required dependencies after cloning or downloading the project run:
 
 ```bash
 npm install
+```
 
 After that Run the development server:
 
@@ -25,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Folder structure
 
-- `app/page.js`: Contains the homepage component
+- `app/page.js`: Calls the homepage component
 - `components`: Contains js files for portfolio components
 - `pages`: provides routes to redirect to any specific page 
 
