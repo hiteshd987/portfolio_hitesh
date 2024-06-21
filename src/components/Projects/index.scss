@@ -54,7 +54,9 @@
     padding-top: 50px;
     text-align: center;
     color: orange;
-    font-size: 36px;
+    h1{
+      font-size: 30px;
+    }
 
     .progress-bar {
         height: 1vh;
@@ -87,7 +89,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         overflow: hidden;
             h2 {
                 font-size: 8vw;
@@ -118,7 +120,7 @@
 // Portrait 
 
 //common
-@media only screen and (min-width: 576px) and (min-height: 431px) and (max-width: 1400px) {
+@media only screen and (min-width: 540px) and (min-height: 431px) and (max-width: 1400px) {
   .custom-modal {  
     .ant-modal-body {
       padding: 1rem;
@@ -129,7 +131,9 @@
   }
   .projects {
     .progress {
-      font-size: 6vw;
+      h1{
+        font-size: 5vw;
+      }
     }
     .container-elements {
       padding: 0 1rem;
@@ -147,7 +151,6 @@
         .text-container {
           height: inherit;
           gap: 20px;
-          margin-top: 2rem;
           h2 {
             font-size: 3vw;
           }
@@ -163,8 +166,6 @@
           button {
             width: 25vw;
             height: 5vh;
-            // font-size: 4vw;
-            // padding: 3vh 4vh;
           }
         }
       }
@@ -184,11 +185,13 @@
   }
 }
 
-/* Smartphones (portrait) common one ----------- */
+/* Smartphones (portrait) ----------- */
 @media only screen and (min-width: 359px) and (max-width:430px) and (min-height: 844px) {
   .projects {
     .progress {
-      font-size: 6vw;
+      h1{
+        font-size: 8vw;
+      }
     }
     .text-container {
           gap: 30px;
@@ -239,9 +242,8 @@
         }
       }
       .project-text-col{
-        // margin-top: 2rem;
       .text-container {
-        gap: 30px;
+        gap: 25px;
           h3{
             font-size: 2vw;
           }
@@ -278,7 +280,7 @@
   .projects {
     .progress {
       h1{
-        font-size: 4vw;
+        font-size: 5vw;
       }
     }
     .container-elements {
@@ -290,13 +292,12 @@
         .text-container {
             gap: 30px;
             height: 100%;
-            H3 {
-              font-size: 3vw;
-            }
             h2 {
-              font-size: 6vw;
+              font-size: 4vw;
             }
-    
+            h3 {
+              font-size: 2.5vw;
+            }
             p {
               font-size: 2.5vw;
             }
@@ -313,8 +314,8 @@
 
 }
 
-// Large screen
-@media only screen and (min-width: 1366px) { 
+// Large screen (min-width: 1366px)
+@media only screen and (min-width: 1154px) { 
   .custom-modal {  
     .ant-modal-body {
       padding: 1rem;
@@ -326,12 +327,12 @@
   .projects {
     .progress {
       h1{
-        font-size: 3vw;
+        font-size: 4vw;
       }
     }
     .container-elements {
       margin-top: 15rem;
-      padding: 0 15rem;
+      padding: 0 10rem;
       .project-row{
         height: 50vh;
         .project-img-col {
@@ -385,13 +386,13 @@
     }
     .container-elements {
       .project-row{
+        padding: 0px;
         height: 50vh;
         .project-img-col {
           height: inherit;
         }
       } 
       .project-text-col{
-        margin-top: 1rem;
         .text-container {
           gap: 8px;
           h3 {
@@ -435,7 +436,7 @@
     .container-elements {
       padding: 0 1rem;
       .project-row{
-        height: 50vh;
+        height: 60vh;
         .project-img-col {
           height: inherit;
         }

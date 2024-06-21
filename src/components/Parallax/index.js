@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "./index.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const Parallax = ({ type }) => {
+const Parallax = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -11,33 +11,22 @@ const Parallax = ({ type }) => {
   });
 
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "1000%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <div
       className="parallax"
-      ref={ref}
-      style={{
-        background:
-          type === "projects"
-            ? "linear-gradient(180deg, #111132, #0c0c1d)"
-            : "linear-gradient(180deg, #111132, #505064)",
-      }}
-    >
+      ref={ref}>
       <motion.h1 style={{ y: yText }}>
-        {type === "projects" ? "Show Projects" : "Display all Skills"}
+        Projects
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
-      <motion.div
-        className="planets"
-        style={{
-          y: yBg,
-          backgroundImage: `url(${
-            type === "projects" ? "/planets.png" : "/sun.png"
-          })`,
-        }}
-      ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      <motion.img
+        className="project-bg-img"
+        src="/projectsbg.jpg"
+        alt="Projects Background"
+        style={{ y: yBg }}
+      />
+      {/* <motion.div className="mountains"></motion.div> */}
     </div>
   );
 };

@@ -41,16 +41,6 @@ let timelineItems = [
     icon: "school",
     img: "/school.svg"
   },
-  // {
-  //   id: 6,
-  //   title: "Diploma in Computer Engineering",
-  //   location: "GOvernment Polytechnic, Nagpur, India",
-  //   // description:
-  //   //   "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  //   // buttonText: "Course Certificate",
-  //   date: "June 2012 - March 2015",
-  //   icon: "school",
-  // },
 ]
 
 export default timelineItems

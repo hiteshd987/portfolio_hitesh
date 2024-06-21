@@ -53,14 +53,23 @@
     width: 3rem;
   }
 
-  .slidingTextContainer {
-    position: absolute;
-    font-size: 20vh;
-    bottom: -30px;
-    white-space: nowrap;
-    color: #ffffff09;
-    text-align: center;
-  }
+  // .sliding-text-container {
+  //   position: absolute;
+  //   font-size: 5vh;
+  //   bottom: 10px;
+  //   left: 0;
+  //   width: 100%;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   text-align: center;
+  //   z-index: 2;
+
+  //   span {
+  //     display: inline-block;
+  //     color: #ffffff09;
+  //     font-weight: bold;
+  //   }
+  // }
 
 }
 
@@ -200,13 +209,11 @@
       .profile-social-container{
         width: 3rem;
         height: 1rem;
-        // gap: 10px;
       }
     
       .profile-img-container{
         width: 10rem;
         height: 10rem;
-        // margin-bottom: 5rem;
       }
       .scroll-img {
         width: 2rem;

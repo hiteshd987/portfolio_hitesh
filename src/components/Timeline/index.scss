@@ -59,7 +59,7 @@
 
 // portrait
 
- /* change comment Extra small devices */
+ /* Extra small devices */
  @media only screen and (max-width: 375px) {
   .timeline-container {
         padding: 10px;
@@ -96,7 +96,7 @@
 @media only screen and (min-width: 359px) and (min-height: 844px) and (max-height: 932px) { 
 
   .timeline-title {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .timeline-container {
     .vertical-timeline {
@@ -169,7 +169,7 @@
 /* Large devices (portrait) */
 @media only screen and (min-width: 1170px) {
   .timeline-title {
-    font-size: 3vw;
+    font-size: 6vw;
   }
   .timeline-container {
     max-height: calc(100vh - 20px);
@@ -209,6 +209,9 @@
     padding: 10px;
     max-height: calc(100vh - 20px);
     overflow-y: auto;
+    .timeline-title { 
+      font-size: 4vw;
+    }
     .vertical-timeline-element {
         margin: 1rem 0;
         .vertical-timeline-element-content {

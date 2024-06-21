@@ -24,9 +24,9 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const LinksComp = ({setOpen}) => {
 
-    const items = ["HomePage", "Projects", "Skills", "Timeline", "Contact"];
+    const items = ["Overview", "Projects", "Skills", "Timeline", "Contact"];
 
     return (
         <motion.div className="links" variants={variants}>
@@ -37,6 +37,7 @@ const Links = () => {
                 variants={itemVariants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => setOpen((prev) => !prev)}
                 >
                   {item}  
                 </motion.a>
@@ -45,4 +46,4 @@ const Links = () => {
     )
 }
 
-export default Links
+export default LinksComp

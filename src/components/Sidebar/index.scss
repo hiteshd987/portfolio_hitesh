@@ -44,3 +44,14 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 932px) {
+    .sidebar {
+        .bg {
+            width: 50%;
+            .links a {
+                font-size: 5vw;
+            }
+        }
+    }
+}

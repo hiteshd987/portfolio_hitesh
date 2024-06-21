@@ -1,13 +1,12 @@
 import { useRef, useState } from "react";
 import "./index.scss"
-import {Row, Col, Card, Space} from 'antd'
+import {Row, Col} from 'antd'
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjectDialog from "./modal";
 import projectItems from './projectItems'
 
 const Single = ({ item }) => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
-    const [dialogText, setDialogText] = useState('');
     const ref = useRef();
   
     const { scrollYProgress } = useScroll({
@@ -17,14 +16,12 @@ const Single = ({ item }) => {
     const y = useTransform(scrollYProgress, [0, 1], [-30, 30]);
 
     const openDialog = () => {
-      // setDialogText(item.desc);
       setIsDialogOpen(true);
     };
 
     return (
-      <>
       <section 
-      // ref={ref}
+      ref={ref}
       >
         <div className="container-elements">
           <Row gutter={[16, 16]} className="project-row"> 
@@ -52,7 +49,6 @@ const Single = ({ item }) => {
           </Row>
         </div>
       </section>
-      </>
     );
   };
 
@@ -77,12 +73,12 @@ const Projects = () => {
             <motion.div style={{ scaleX }} className="progress-bar"></motion.div>
             </Col>
           </Row>
-          <Row gutter={[16, 16]} className="projects-container">
-            <Col xs={24} sm={24} md={24} lg={24}>
-              {projectItems.map(item => (
+          <Row gutter={[16, 16]} className="projects-container">     
+              {projectItems.map((item, index) => (
+                <Col xs={24} sm={24} md={24} lg={24} key={index}>
                 <Single item={item} key={item.id} /> 
+                </Col>
               ))}
-            </Col>
           </Row>
         </div> 
     )

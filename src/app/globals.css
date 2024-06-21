@@ -1,8 +1,6 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  /* overflow-y: scroll; */
-  /* scroll-behavior: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
 }
 
 * {
@@ -27,10 +25,3 @@ section {
   scroll-snap-align: center;
   overflow: hidden;
 }
-
-/* @media (max-width: 768px) {
-  section {
-    height: auto;
-    padding: 20px;
-  }
-} */

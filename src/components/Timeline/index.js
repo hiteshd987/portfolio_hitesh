@@ -4,10 +4,6 @@ import "react-vertical-timeline-component/style.min.css"
 import timelineItems from './timelineItems.js'
 import { Row, Col } from 'antd';
 import "./index.scss"
-// import WorkIcon from "./work.svg"
-// import SchoolIcon from "./school.svg"
-
-// import { Chrono } from 'react-chrono';
 
 const Timeline = () => {
   let workIconStyles = { background: "#06D6A0" }

@@ -1,109 +1,53 @@
-// // .parallax {
-// //   width: 100%;
-// //   height: 100%;
-// //   position: relative;
-// //   display: flex;
-// //   align-items: center;
-// //   justify-content: center;
-// //   overflow: hidden;
-  
-// //   h1 {
-// //     font-size: 100px;
-// //   }
-
-// //   .mountains {
-// //     background-image: url("/mountains.png");
-// //     background-size: cover;
-// //     background-position: bottom;
-// //     width: 100%;
-// //     height: 100%;
-// //     position: absolute;
-// //     z-index: 3;
-// //   }
-// //   .planets {
-// //     background-size: cover;
-// //     background-position: bottom;
-// //     width: 200px;
-// //     height: inherit;
-// //     position: absolute;
-// //     z-index: 2;
-// //   }
-// //   .stars {
-// //     background-image: url("/stars.png");
-// //     background-size: cover;
-// //     background-position: bottom;
-// //     width: 100%;
-// //     height: 100%;
-// //     position: absolute;
-// //     z-index: 1;
-// //   }
-// // }
-
-// ************* new *************
-
 .parallax {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   overflow: hidden;
-  
+
   h1 {
-    font-size: 5vh; /* Adjusted for responsiveness */
+    font-size: 6vh;
+    z-index: 4;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    top: 10%;
   }
 
-  .mountains {
-    background-image: url("/mountains.png");
-    background-size: cover;
-    background-position: bottom;
+  .project-bg-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
-    z-index: 3;
+    z-index: 3; 
+    top: 0;
+    left: 0;
   }
 
-  .planets {
-    background-size: cover;
-    background-position: bottom;
-    width: 200px;
-    height: inherit;
-    position: absolute;
-    z-index: 2;
-  }
-
-  .stars {
-    background-image: url("/stars.png");
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-  }
 }
 
-@media (max-width: 768px) {
-  .parallax {
-    h1 {
-      font-size: 3vh; /* Adjusted for responsiveness */
-    }
+// @media (max-width: 1200px) {
+//   .parallax h1 {
+//     font-size: 5vh;
+//   }
+// }
 
-    .planets {
-      width: 150px; /* Adjusted for responsiveness */
-    }
-  }
-}
+// @media (max-width: 768px) {
+//   .parallax h1 {
+//     font-size: 4vh;
+//   }
+// }
 
-@media (max-width: 480px) {
-  .parallax {
-    h1 {
-      font-size: 2vh; /* Adjusted for responsiveness */
-    }
+// @media (max-width: 480px) {
+//   .parallax h1 {
+//     font-size: 3vh;
+//   }
+// }
 
-    .planets {
-      width: 100px; /* Adjusted for responsiveness */
-    }
+@media only screen and (min-width: 667px) and (max-width: 932px) and (max-height: 430px) { 
+  .parallax h1 {
+    font-size: 4vw;
   }
 }

@@ -1,9 +1,7 @@
-import Image from 'next/image'
-// import profilePic from '../../app/vk.jpg'
+import { Row, Col } from 'antd';
 import { motion } from 'framer-motion';
 import "./index.scss"
-import { Row, Col } from 'antd';
-import Link from 'next/link';
+
 
 const textVariants = {
     initial: {
@@ -28,19 +26,19 @@ const textVariants = {
     }
 };
 
-const silderVariants = {
-    initial: {
-        x: 0,
-    },
-    animate: {
-        x:"-220%",
-        transition: {
-            repeat: Infinity,
-            repeatType: "mirror",
-            duration: 20,
-        },
-    },
-};
+// const sliderVariants = {
+//     initial: {
+//         x: 0,
+//     },
+//     animate: {
+//         x:"-220%",
+//         transition: {
+//             repeat: Infinity,
+//             repeatType: "mirror",
+//             duration: 20,
+//         },
+//     },
+// };
 
 const Description = () => {
     return (
@@ -88,8 +86,8 @@ const Description = () => {
                     </Col>
                 </motion.div> 
                 </Col>
-                {/* <motion.div className='slidingTextContainer' variants={silderVariants} initial="initial" animate="animate">
-                    Student & FrontEnd Developer
+                {/* <motion.div className='sliding-text-container' variants={sliderVariants} initial="initial" animate="animate">
+                   <span>Student & FrontEnd Developer</span> 
                 </motion.div> */}
             </Row>
         </div>      
