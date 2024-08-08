@@ -17,6 +17,8 @@
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "sass": "^1.71.1"

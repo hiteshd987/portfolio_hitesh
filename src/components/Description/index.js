@@ -1,4 +1,6 @@
-import { Row, Col, Image } from 'antd';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Image from 'antd/lib/image';
 import { motion } from 'framer-motion';
 import "./index.scss"
 
@@ -41,7 +43,7 @@ const Description = () => {
                     <Col xs={24} sm={24} md={24} lg={24} className='profile-element'>
                         <motion.div variants={textVariants} className='profile-desc-container'>
                             <motion.p variants={textVariants}>
-                                Experienced web developer with expertise in Reactjs and Nextjs. Currently pursuing a Master's in
+                                Experienced web developer with expertise in Reactjs and Nextjs. Currently pursuing a Master&apos;s in
                                 Computer and Systems Engineering at Technical University Ilmenau, with a strong command over
                                 front-end technologies and Adobe Experience Manager.
                             </motion.p>

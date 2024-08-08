@@ -1,5 +1,11 @@
 import React from 'react';
-import { Card, Space, Row, Col, Input, Button, Image } from 'antd';
+import Card from 'antd/lib/card';
+import Space from 'antd/lib/space';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Input from 'antd/lib/input';
+import Button from 'antd/lib/button';
+import Image from 'antd/lib/image';
 const {TextArea} = Input;
 import "./index.scss"
 

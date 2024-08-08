@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import "./index.scss"
-import {Row, Col, Image} from 'antd'
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Image from 'antd/lib/image';
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjectDialog from "./modal";
 import projectItems from './projectItems'

@@ -2,7 +2,9 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'; 
 import "react-vertical-timeline-component/style.min.css"
 import timelineItems from './timelineItems.js'
-import { Row, Col, Image } from 'antd';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Image from 'antd/lib/image';
 import "./index.scss"
 
 const Timeline = () => {

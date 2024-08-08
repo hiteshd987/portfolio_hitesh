@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
-import {Card, Row, Col} from 'antd';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Card from 'antd/lib/card';
 import { motion, useScroll, useTransform } from "framer-motion";
 import './index.scss';
 

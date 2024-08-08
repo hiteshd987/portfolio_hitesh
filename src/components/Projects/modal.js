@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from 'antd';
+import Modal from 'antd/lib/modal';
 const ProjectDialog = ({isDialogOpen, dialogText, setIsDialogOpen}) => {
 
     const handleOk = () => {
