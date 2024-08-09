@@ -38,23 +38,13 @@
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
       0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
   }
-
-  .vertical-timeline-element {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // position: relative;
-  }
   
   .vertical-timeline-element-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;  // Adjust size as needed
-    height: 60px; // Adjust size as needed
-    background-color: transparent; // Ensure no background interferes with centering
-    border-radius: 50%; // Optional: if you want a circular container
-    // overflow: hidden; // Optional: to hide overflow if the image is larger
+    background-color: transparent; 
+    border-radius: 50%; 
   }
   
   .vertical-timeline-element-icon img {
@@ -63,18 +53,6 @@
     padding: 20%;
     object-fit: contain;
   }
-  
-  // .vertical-timeline-element-icon {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-  // .vertical-timeline-element-icon img {
-  //   width: 50%; 
-  //   height: 50%;
-  //   object-fit: contain;
-  // }
   
 }
 
