@@ -81,7 +81,8 @@
     }
      .project-img {
       width: 100%;
-      height: 100%;
+      // height: 100%;
+      height: 38vh;
     }
     .project-text-col{
       height: 40vh;
@@ -143,7 +144,8 @@
         height: 40vh;
         .project-img {
           width: 100%;
-          height: 100%;
+          // height: 100%;
+          height: 38vh;
         }
       }
       .project-text-col{
@@ -341,7 +343,7 @@
         .project-text-col{
           margin-top: 2rem;
           .text-container {
-            gap: 35px;
+            // gap: 35px;
             h3 {
               font-size: 1.5vw;
             }
