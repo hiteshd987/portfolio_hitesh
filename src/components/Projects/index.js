@@ -28,7 +28,14 @@ const Single = ({ item }) => {
         <div className="container-elements">
           <Row gutter={[16, 16]} className="project-row"> 
             <Col className="project-img-col" xs={24} sm={12} md={12} lg={12}>
-              <Image src={item.img} alt="" className="project-img" />
+              <motion.img src={item.img} alt="Image" className="project-img" />
+              {/* <Image 
+                src={item.img} 
+                alt="Project image" 
+                className="project-img"
+                placeholder="empty"
+                layout="intrinsic"
+              /> */}
             </Col>
             <Col xs={24} sm={12} md={12} lg={12} className="project-text-col"> 
             <motion.div className="text-container" style={{y}}>

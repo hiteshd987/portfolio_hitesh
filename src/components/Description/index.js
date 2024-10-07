@@ -53,11 +53,14 @@ const Description = () => {
                         <motion.div variants={textVariants} className='profile-social-container'>
                             <a href="https://github.com/hiteshd987" 
                             >
-                                    <Image src="/github.png" alt="Github" />
+                                    <motion.img variants={textVariants} src="/github.png" alt="Github" className="github-img" />
+                                    {/* <Image src="/github.png" alt="Github" /> */}
                             </a>
+    
                             <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/" 
                             >
-                                    <Image src="/linkedin.png" alt="Linkedin" />
+                                    <motion.img variants={textVariants} src="/linkedin.png" alt="Linkedin" className="linkedin-img" />
+                                    {/* <Image src="/linkedin.png" alt="Linkedin" /> */}
                             </a>    
                         </motion.div>
                     </Col>

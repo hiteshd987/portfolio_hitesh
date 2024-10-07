@@ -6,6 +6,7 @@ import Col from 'antd/lib/col';
 import Input from 'antd/lib/input';
 import Button from 'antd/lib/button';
 import Image from 'antd/lib/image';
+import { motion } from 'framer-motion';
 const {TextArea} = Input;
 import "./index.scss"
 
@@ -29,10 +30,12 @@ const Contact = () => {
                     </div>
                     <div className="social-container card-details">
                         <a href="https://github.com/hiteshd987">
-                            <Image src="/github2.svg" alt="Github" />
+                            <motion.img src="/github2.svg" alt="Github" className="github-img" />
+                            {/* <Image src="/github2.svg" alt="Github" /> */}
                         </a>
                         <a href="https://www.linkedin.com/in/hitesh-derkar-151aa7147/">
-                            <Image src="/linkedin.png" alt="Linkedin" />
+                            <motion.img src="/linkedin.png" alt="Linkedin" className="linkedin-img" />
+                            {/* <Image src="/linkedin.png" alt="Linkedin" /> */}
                         </a>
                     </div>
                     </div>

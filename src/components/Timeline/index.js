@@ -5,6 +5,7 @@ import timelineItems from './timelineItems.js'
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Image from 'antd/lib/image';
+import { motion } from "framer-motion";
 import "./index.scss"
 
 const Timeline = () => {
@@ -37,7 +38,10 @@ const Timeline = () => {
               date={item.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={<Image src={item.img} alt="timelineicon" />}
+              icon={
+              <motion.img src={item.img} alt="" className="project-img" />
+              // <Image src={item.img} alt="timelineicon" />
+            }
               
             >
               <p className='vertical-timeline-element-title'>
